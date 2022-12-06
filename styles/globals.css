@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  background-color: #f7fafce0 !important;
+}
+
+.line_before:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(148, 148, 148);
+  margin-bottom: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
