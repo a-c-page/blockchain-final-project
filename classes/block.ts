@@ -37,7 +37,11 @@ class Block {
 
 // perform hash of given data with SHA-256 hashing algorithm
   calculateHash(data: string) {
-    return createHash("sha256").update(data).digest("hex");
+    let hashEngine = createHash("sha256").update(data);
+    let outputAsHex = hashEngine.digest("hex");
+    return outputAsHex;
+  
+    //return createHash("sha256").update(data).digest("hex");
   }
 }
 
