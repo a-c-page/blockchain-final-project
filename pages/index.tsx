@@ -29,7 +29,7 @@ const Home: NextPage = () => {
     <>
       {!showDash && (
         <>
-          <h1 className="text-center mt-[100px]">Blockchain Demo</h1>
+          <h1 className="text-center mt-[100px]">Academic Blockchain Demo</h1>
           <div className="mt-[40px] flex flex-row justify-evenly mx-auto w-[80%]">
             <div
               onClick={() => {
